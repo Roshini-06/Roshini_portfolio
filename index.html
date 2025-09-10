@@ -116,7 +116,7 @@
             <p>Computer-vision mouse control using finger gestures — fun HCI demo with clear writeup & video.</p>
             <div class="stack"><span>OpenCV</span><span>MediaPipe</span><span>Python</span></div>
             <div class="links">
-              <a class="btn small" href="C:\Users\jagan\Downloads\portfolio-starter" target="_blank" rel="noopener">Code</a>
+              <a class="btn small" href="https://github.com/Roshini-06/Ai_Mouse_Controller" target="_blank" rel="noopener">Code</a>
               <!--a class="btn small outline" href="#" target="_blank" rel="noopener">Demo</a-->
             </div>
           </div>
@@ -139,30 +139,23 @@
           <p><strong>GitHub:</strong> <a href="https://github.com/Roshini-06" target="_blank" rel="noopener">https://github.com/Roshini-06</a></p>
           <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/roshini-jagan-a03b85332/" target="_blank" rel="noopener">https://www.linkedin.com/in/roshini-jagan-a03b85332</a></p>
         </div>
-        <form name="contact" method="POST" data-netlify="true" class="contact-form">
+        <form action="https://formspree.io/f/mvgblkpr" name="contact" method="POST" data-netlify="true" class="contact-form">
           <input type="hidden" name="form-name" value="contact" />
           <label> Name
-            <input type="text" name="name" required />
+            <input type="text" name="user_name" required />
           </label>
           <label> Email
-            <input type="email" name="email" required />
+            <input type="email" name="user_email" required />
           </label>
           <label> Message
             <textarea name="message" rows="4" required></textarea>
           </label>
           <button class="btn primary" type="submit">Send</button>
-          <p class="hint">Let’s connect! Your message will land directly in my inbox.</p>
+
+          <p class="hint" id="message-status">Let’s connect! Your message will land directly in my inbox.</p>
         </form>
       </div>
     </section>
-    <!-- EmailJS SDK -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-    (function(){
-        emailjs.init("6IOWmIiJu5SgessiY"); // replace with your real Public Key
-    })();
-    </script>
-    <script src="script.js"></script>
   </main>
 
   <button id="backToTop" aria-label="Back to top">↑</button>
@@ -173,6 +166,5 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>

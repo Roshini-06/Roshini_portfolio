@@ -1,3 +1,4 @@
+
 // Mobile nav toggle & small UX helpers
 const nav = document.getElementById('site-nav');
 const toggle = document.querySelector('.nav-toggle');
@@ -22,14 +23,3 @@ backToTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: '
 
 // Year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    emailjs.sendForm("service_bolfj04", "template_cl23qyh", this)
-        .then(function() {
-            alert("✅ Message sent successfully!");
-        }, function(error) {
-            alert("❌ Failed to send message. Please try again.");
-            console.error("EmailJS Error:", error);
-        });
-});
